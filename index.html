@@ -29,7 +29,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 -->
 	
 <head> 
-	<title>Hello World</title>  
+	<title>CovidorStrep</title>  
 ]	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<link rel="stylesheet" href="w3.css">
@@ -37,8 +37,29 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </head> 
 
 <script>
+	var covid_count = 0;
+	var strep_count = 0;
+	
+	//The variables above are set to 0 to initialize them.//
 
-	//YOUR JAVASCRIPT GOES HERE
+	function covidAdd(){
+		covid_count = covid_count + 1;
+	}
+
+	function strepAdd(){
+		strep_count = strep_count + 1;
+	}
+	
+	
+	//The functions above add 1 to each variable when the user answers a question that aligns with the symptoms of each sickness.//
+
+	function result(){
+		var covidpercent = (covid_count/6)*100;
+		var streppercent = (strep_count/6)*100
+		var result = document.getElementById("results");
+		result.innerHTML = "Probability it is Covid =" + covidpercent + "<br> Probability it is strep throat =" + streppercent;
+
+//The function above calculates the individual percentages of having strep or covid based on the user's answers to the questionnaire. It changes the content of the HTML on the results page to display the probabilities.//
 
 </script>	
 
@@ -67,7 +88,19 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </style>
 
 <body>
-	
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Strep or Covid?</h1>
+	</div>
+
+	<div id="content" class="w3-container">
+		<p> Do you have a sore throat, but you don't know whether it is strep or Covid? Answer a few questions to see.</p>
+
+
+		<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a> <!--Moves the user to the next page-->
+
+		<p>The following code has been developed by students and/or researchers of the Freshmen Research Initiative DIY Diagnostics Stream at The University of Texas at Austin. This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+
+		<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 	<!-- HERE IS WHERE ALL OF YOUR HTML PAGES GO -->
 	REPLACE THIS TEXT
 	
