@@ -58,6 +58,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		var streppercent = (strep_count/6)*100
 		var result = document.getElementById("results");
 		result.innerHTML = "Probability it is Covid =" + covidpercent + "<br> Probability it is strep throat =" + streppercent;
+	}
 
 //The function above calculates the individual percentages of having strep or covid based on the user's answers to the questionnaire. It changes the content of the HTML on the results page to display the probabilities.//
 
@@ -176,9 +177,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
 	</div>
+
 	<div id="content" class="w3-container">
-	<button class="w3-btn w3-black" onclick="result();"> Get Results </button>
-	<p id="result"></p>
+		<button class="w3-btn w3-black" onclick="result();"> Get Results </button>
+		<p id="result"></p>
 	</div>
 </div>
 
