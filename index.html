@@ -87,7 +87,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     z-index: 1;
 }
 </style>
-
+<!--Below is the code for the introduction page-->
 <body>
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Strep or Covid?</h1>
@@ -97,13 +97,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<p> Do you have a sore throat, but you don't know whether it is strep or Covid? Answer a few questions to see.</p>
 
 
-		<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a> <!--Moves the user to the next page-->
+		<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a> <!--Moves the user to the next page when the button is clicked-->
 
 		<p>The following code has been developed by students and/or researchers of the Freshmen Research Initiative DIY Diagnostics Stream at The University of Texas at Austin. This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
 
 		<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 </div>
-	<img src="streporcovid.jpg" alt="Covid and strep chart" style="width:380px;height:310px;">
+	<img src="streporcovid.jpg" alt="Covid and strep chart" style="width:380px;height:310px;"> <!--Adds an image to the introduction page; the style states the image size-->
+
+<!--This is where the questions begin-->
 
 <div class="page" id="one">
 	
@@ -113,12 +115,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 	<div id="content" class="w3-container">
 	<p>Do you have a cough?</p>
-	<a href="#two" onclick="covidAdd();" class="w3-btn w3-black">Yes</a>
-	<a href="#two" onclick="strepAdd();" class="w3-btn w3-black">No</a>
+	<a href="#two" onclick="covidAdd();" class="w3-btn w3-black">Yes</a> <!--When the button is clicked it adds 1 to the covid_count variable and moves the user to the next page-->
+	<a href="#two" onclick="strepAdd();" class="w3-btn w3-black">No</a> <!--When the button is clicked it adds 1 to the strep_count variable and moves the user to the next page-->
 	</div>
 
 </div>
-<div class="page" id="two">
+<div class="page" id="two"> <!--A new page-->
 
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
@@ -126,11 +128,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 	<div id="content" class="w3-container">
 		<p>Do you have difficulty swallowing?</p>
-		<a href="#three" onclick="strepAdd();" class="w3-btn w3-black">Yes</a>
-		<a href="#three" onclick="covidAdd();" class="w3-btn w3-black">No</a>
+		<a href="#three" onclick="strepAdd();" class="w3-btn w3-black">Yes</a> <!--When the button is clicked it adds 1 to the strep_count variable and moves the user to the next page-->
+		<a href="#three" onclick="covidAdd();" class="w3-btn w3-black">No</a> <!--When the button is clicked it adds 1 to the covid_count variable and moves the user to the next page-->
 	</div>
 </div>
-<div class="page" id="three">
+<div class="page" id="three"> <!--A new page-->
 	
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 3</h1>
@@ -138,44 +140,44 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 	<div id="content" class="w3-container">
 		<p>Do you have difficulty breathing?</p>
-		<a href="#four" onclick="covidAdd();" class="w3-btn w3-black">Yes</a>
-		<a href="#four" onclick="strepAdd();" class="w3-btn w3-black">No</a>
+		<a href="#four" onclick="covidAdd();" class="w3-btn w3-black">Yes</a> <!--When the button is clicked it adds 1 to the covid_count variable and moves the user to the next page-->
+		<a href="#four" onclick="strepAdd();" class="w3-btn w3-black">No</a> <!--When the button is clicked it adds 1 to the strep_count variable and moves the user to the next page-->
 	</div>
 </div>
-<div class="page" id="four">
+<div class="page" id="four"> <!--A new page-->
 	
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 4</h1>
 	</div>
 	<div id="content" class="w3-container">
 		<p>Is your throat visibly red and/or has white patches on it?</p>
-		<a href="#five" onclick="strepAdd();" class="w3-btn w3-black">Yes</a>
-		<a href="#five" onclick="covidAdd();" class="w3-btn w3-black">No</a>
+		<a href="#five" onclick="strepAdd();" class="w3-btn w3-black">Yes</a> <!--When the button is clicked it adds 1 to the strep_count variable and moves the user to the next page-->
+		<a href="#five" onclick="covidAdd();" class="w3-btn w3-black">No</a> <!--When the button is clicked it adds 1 to the covid_count variable and moves the user to the next page-->
 	</div>
 </div>
-<div class="page" id="five">
+<div class="page" id="five"> <!--A new page-->
 	
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 5</h1>
 	</div>
 	<div id="content" class="w3-container">
 		<p>Do you have congestion or a runny nose?</p>
-		<a href="#six" onclick="covidAdd();" class="w3-btn w3-black">Yes</a>
-		<a href="#six" onclick="strepAdd();" class="w3-btn w3-black">No</a>
+		<a href="#six" onclick="covidAdd();" class="w3-btn w3-black">Yes</a> <!--When the button is clicked it adds 1 to the covid_count variable and moves the user to the next page-->
+		<a href="#six" onclick="strepAdd();" class="w3-btn w3-black">No</a> <!--When the button is clicked it adds 1 to the strep_count variable and moves the user to the next page-->
 	</div>
 </div>
-<div class="page" id="six">
+<div class="page" id="six"> <!--A new page-->
 	
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 6</h1>
 	</div>
 	<div id="content" class="w3-container">
 		<p>Did your symptoms develop gradually or rapidly?</p>
-		<a href="#results" onclick="covidAdd();" class="w3-btn w3-black">Gradually</a>
-		<a href="#results" onclick="strepAdd();" class="w3-btn w3-black">Rapidly</a>
+		<a href="#results" onclick="covidAdd();" class="w3-btn w3-black">Gradually</a> <!--When the button is clicked it adds 1 to the covid_count variable and moves the user to the next page-->
+		<a href="#results" onclick="strepAdd();" class="w3-btn w3-black">Rapidly</a> <!--When the button is clicked it adds 1 to the strep_count variable and moves the user to the next page-->
 	</div>
 </div>
-<div class="page" id="results">
+<div class="page" id="results"> <!--This is the results page, there are no new questions-->
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
 	</div>
@@ -183,12 +185,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container">
 		<button class="w3-btn w3-black" onclick="result();"> Get Results </button>
 		<p id="result"></p>
-	</div>
+	</div> <!--When the button is clicked, it calls on the result function in JavaScript to calculate the results based on the user's answers to the questions. It then changes the HTML code to display the percentages-->
 </div>
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
-</footer>
+</footer> <!--The footer shows up on every page-->
 
 </body>
 </html>
